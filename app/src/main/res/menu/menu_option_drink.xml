@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_favorist_menu_option"
+        android:title="@string/add_favorist_drink"/>
+    <item android:id="@+id/delete_drink"
+        android:title="Delete" />
+    <item android:id="@+id/add_cart_drink"
+        android:title="Add To Cart" />
+</menu>

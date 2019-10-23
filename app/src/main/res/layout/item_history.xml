@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imv_item_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/capuchino"/>
+
+                <LinearLayout
+                    android:gravity="bottom"
+                    android:background="@color/black"
+                    android:layout_alignBottom="@id/imv_item_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:gravity="bottom"
+                        android:layout_alignBottom="@id/imv_item_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tv_name_drink_item_history"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_20"
+                            android:text="@string/name_drink"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/white"
+                                android:id="@+id/tv_price_item_history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/price"
+                                android:paddingRight="@dimen/dp_10"/>
+                            <TextView
+                                android:id="@+id/tv_price_number_item_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="20.000"
+                                android:layout_toRightOf="@id/tv_price_item_history"
+                                />
+                            <RatingBar
+                                android:id="@+id/rb_item_history"
+                                android:layout_alignRight="@id/tv_price_number_item_history"
+                                android:rating="0"
+                                android:stepSize="0.5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/RatingBar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:focusable="false"
+                                android:id="@+id/edt_number_drink_item_history"
+                                android:layout_width="@dimen/dp_50"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:hint="@string/number_drink"
+                                android:inputType="number"
+                                android:textColorHint="@color/white"/>
+                            <TextView
+                                android:id="@+id/tv_date_item_history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date"
+                                android:textColor="@color/green_light"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>
